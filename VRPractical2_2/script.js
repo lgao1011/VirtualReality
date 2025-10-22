@@ -16,7 +16,7 @@ window.addEventListener("DOMContentLoaded",function() {
 
     pokeball = document.querySelector("#pokemonball");
     pokeball.a = 0;
-    pokeball.da = 1;
+    pokeball.da = 5;
 
     pokeLoop();
 
