@@ -8,6 +8,8 @@ window.addEventListener("DOMContentLoaded",function() {
     let x = rnd(-20,20);
     let z = rnd(-20,20);
     let tree = new Tree(x, 0 , z);
+    let cloud = new Cloud(x, 6, z);
+    let house = new House(x+3, -1, z);
   }
 
 })
