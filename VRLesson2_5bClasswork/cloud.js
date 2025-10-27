@@ -1,11 +1,11 @@
 class Cloud{
   constructor(x,y,z){
+    this.obj = document.createElement("a-entity");
+    
     this.x = x;
     this.y = y;
     this.z = z;
     this.dx = 0.01;
-
-    this.obj = document.createElement("a-entity");
     let shapes = ["a-dodecahedron","a-icosahedron","a-octahedron","a-tetrahedron"];
 
     for(let i = -1; i <= 1; i++){
