@@ -11,18 +11,64 @@
 */
 
 let maze = [
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
+"zzzxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+"zzzzzzxzzzzzzzzxzzxzgzzzxzzzzzxzzxzzzzzzzzxzzzzzzzzzzzxzzxzzzzzzzgzzzzzzzzzx",
+"zzzzzzxzzzzzzzzxzzxzgzzzxzzzzzxzzxzzzzzzzzxzzzzzzzzzzzxzzxzzzzzzzgzzzzzzzzzx",
+"xxxxzzxxxxzzxxxxzzxxxxzzxzzxxxxzzxzzxxxxxxxxxxxxxzzxxxxzzxxxxxxxzgxxxxzzxzzx",
+"xzzzzzxzzgzzzzzxgzzzzxzzxzzxzzxzzxgzzzzxzzzzzxzzzzzxzzzzzxzgzzzxzzxzzxzzxzzx",
+"xzzzzzxzzgzzzzzxgzzzzxzzxzzxzzxzzxgzzzzxzzzzzxzzzzzxzzzzzxzgzzzxzzxzzxzzxzzx",
+"xzzxxxxzzxxxxzzxxxxzzxzzxzzxzzxzzxzzxgzxzzxxxxxxxzzxxxxzzxzzxzzxxxxzzxzzxzzx",
+"xzzzzzzzggzzxzzzzzxzzzzzzzzzzzzzzxzzxzzzzzxzzzzzzzzzzzzzzzzzxzzxzzzzzzzzxzzx",
+"xzzzzzzzggzzxzzzzzxzzzzzzzzzzzzzzxzzxzzzzzxzzzzzzzzzzzzzzzzzxzzxzzzzzzzzxzzx",
+"xzzxzzxxxxxxxzzxzzxzzxxxxxxxxxxzzxzzxzzxzzxxxxxxxxxxxxxzzxxxxzzxzzxzzxxxxzzx",
+"xzzxzzxzzzzzxzzxzzxzzzzzxzzzzzxzzzzzxzzxzzzzzxzzxzzzzzxzzxzzzzzzzzxzzxzzzzzx",
+"xzzxzzxzzzzzxzzxzzxzzzzzxzzzzzxzzzzzxzzxzzzzzxzzxzzzzzxzzxzzzzzzzzxzzxzzzzzx",
+"xxxxzzxxxxzzxxxxzzxxxxzgxzzxxxxxxxzzxxxxxxxxxxzgxxxxzzxxxxxxxxxxxxxzzxzzxzzx",
+"xzzzzzzzzzzzzzzxzzxzzxzzxzzzzzxzzzzzxzzzzzzzzzzzxzzzzzzzzxzzxzzxzzzzzxzzxzzx",
+"xzzzzzzzzzzzzzzxzzxzzxzzxzzzzzxzzzzzxzzzzzzzzzzzxzzzzzzzzxzzxzzxzzzzzxzzxzzx",
+"xzzxzzxxxxzzxxxxxxxzzxzzxzzxzzxzzxxxxxxxxxxzzxxxxzzxzzxxxxzzxzzxxxxxxxxxxzzx",
+"xzzxzzxzzgzzgzzxzgzzzzzgzzzxzzxzzzzzzzzxzzzzzxzzzzzxzzzzzxzzzzzxzzzzzzzzzzzx",
+"xzzxzzxzzgzzgzzxzgzzzzzgzzzxzzxzzzzzzzzxzzzzzxzzzzzxzzzzzxzzzzzxzzzzzzzzzzzx",
+"xzzxxxxzzxxxxxxxxxxxxxzzxxxxxxxxxxzzxzzxxxgzzxxxxzzxxxxxxxzzxzzxxxxxxxzzxxxx",
+"xzzxzzzzzxzzzzzxzzzgzzzzxzzxzzxzzzzzxzzxzzzzzzzzxzzzzzxzzzzzxzzzzzzzzxzzxzzx",
+"xzzxzzzzzxzzzzzxzzzgzzzzxzzxzzxzzzzzxzzxzzzzzzzzxzzzzzxzzzzzxzzzzzzzzxzzxzzx",
+"xxxxzzxxxxzzxxxxxxxzzxxxxzzxzzxzzxzzxzzxzzxzzxzzxzzxxxxzzxxxxxxxxxxzzxzzxzzx",
+"xzzzzzxzzxzzzzzgzzzzgzzzxzzzzzgzzxzzxzzzzzxzzxzzgzzxzzzzzzzzxzzzzgzzzxzzzzzx",
+"xxxxzzxzzxzzxzzxxxxzzxxxxxxxzzxzzxzzxzzxzzxxxxzzxxxxxxxxxxxxxzzxxxxzzxxxxzzx",
+"xzzzzzgzzzzzxzzzzzxzzxzzxzzxzzxzzxzzxzzxzzxzzzzgzzzzzgzzzzzzxzzxzzzzzzzzzzzx",
+"xxxxxxxzzxzzxxxxzzxxxxzzxzzxxxxxxxxxxzzxxxxxxxzzxxxxxxxzzxzzxzzxxxxxxxzzxzzx",
+"xzzxzzgzzxzzxzzzzzzzzzzzxzzzzzzzzxzzzzzxzzzzzzzzzzzxzzzzzxzzzzzxzzzzzxzzxzzx",
+"xzzxzzxxxxxxxxxxzzxxxxxxxxxxzzxxxxzzxxxxxxxzzxxxxzzxxxxxxxzzxzzxzzxxxxxxxzzx",
+"xzzzzzxzzxzzxzzzzzgzzzzzxzzxgzxzzxzzxzzzzzzzzxzzxzzgzzxzzzzzxzzzzzzzzzzzxzzx",
+"xxxxxxxzzxzzxzzxxxxzzxxxxzzxzzxzzxzzxzzxxxxzzxzzxxxxxxxxxxzzxxxxxxxxxxxxxzzx",
+"xzzzzzxzzzzzzzzzzzxzzzzzxzzzgzzzzxzzxzzzzzxzzzzzxzzzzzxzzzzzzzzxzzzzzzzzzzzx",
+"xxxxzzxxxxxxxzzxzzxxxxxxxzzxxxxxxxxxxxxxzzxzzxxxxzzxxxxxxxxxxzzxxxxzzxxxxxxx",
+"xzzzzzzzzzzzzzzxzzzzzxzzxzzzzzxzzzzzzzzxzzxzgzzzzzzzzzxzzzzzxzzzzzxzzxzzzzzx",
+"xzzxxxxxxxzzxxxxzzxxxxzzxxxxzzxxxxzzxxxxxxxzzxxxxzzxxxxzzxzzxzzxxxxxxxxxxzzx",
+"xzzzzzxzzzzzzzzxzzzzzzzzxzzzzzxzzzzzzzzzzzzzzzzzxzzxzzxzzxzzgzzxzzxzzzzzzzzx",
+"xxxxzzxxxxxxxxxxxxxxxxxxxzzxxxxxxxzzxxxxxxxzzxxxxxxxzzxzzxxxxzzxzzxxxxxxxzzx",
+"xzzxzzzzzzzzxzzzzzzzzxzzzzzxzzzzzzzzxzzgzzzzzzzzxzzzzzzzzxzzzzzzzzxzzzzzxzzx",
+"xzzxzzxxxxzzxzzxxxxzzxxxxzzxxxxzzxxxxxxxzzxxxxzzxzzxxxxzzxxxxzzxzzxzzxxxxzzx",
+"xzzzzzxzgzzzzgzzzzxzzxzzzzzxzzxzzxzzxzzzzzzzzxzzxzzzzzxzzxzzzzzxzzxzzzzzxzzx",
+"xzzxxxxzzxxxxxxxzzxxxxzzxxxxzzxzzxzzxxxxzzxxxxzzxxxxxxxxxxzzxxxxzzxzzxzzxzzx",
+"xzzxzzzzzzzzxzzzzzxzzzzzzzzzzzxzzzzzzzzxzzxzzgzzxzzzzzxzzzzzxzzxzzxzzxzzzzzx",
+"xxxxxxxzzxzzxxxxxxxxxxzzxxxxxxxxxxxxxzzxzzxxxxzzxzzxzzxzzxxxxzzxxxxxxxxxxzzx",
+"xzzxzzzzzxzzxzzxzzzzzxzzxzzxzzzzzzzzzzzxzzxzzxzzxzzxzzzzzxzzzzzzzzzzzxzzxzzx",
+"xzzxzzxxxxzzxzzxzzxzzxzzxzzxxxxzzxzzxxxxxxxzzxxxxxxxxxxzzxzzxzzxxxxxxxzzxzzx",
+"xzzzzzzzzxzzxgzzzzxgzxzzzzzzzzxzzxzzzzzzzzzzzzzzxzzxzzzzzxzzxzzzzzxzzzzzxzzx",
+"xxxxzzxzzxxxxxxxzzxxxxzzxxxxzzxxxxxxxxxxzzxzzxxxxzzxzzxxxxzzxxxxxxxxxxzzxzzx",
+"xzzxzzxzzxzzzzzzzzxzzxzzxzzzzzxzzzzzxzzzzzxzzzzzxzzzzzxzzzzzxzzzzzzzzzzzzzzx",
+"xzzxzzxxxxzzxzzxxxxzzxxxxzzxxxxzzxzzxxxxzzxxxxxxxxxxxxxzzxxxxxxxxxxzzxxxxxxx",
+"xzzzzzzzzzzzxzzzzzzgzzzzzzzzzgzzzxzzxzzxzzxzzzzzzzzxzzzzzzzzzzzzzzxzzzzzzzzx",
+"xzzxxxxzzxxxxzzxxxxzzxxxxzzxxxxxxxxxxzzxxxxzzxxxxxxxzzxzzxzzxzzxzzxzzxxxxzzx",
+"xzzzzzxzzzzzxzzzzzxzzzzzxzzzzzzzzxzzzzzzzzzzzzzzzzzxzzxzzxzzxzzxzzzzzxzzzzzx",
+"xzzxxxxxxxxxxxxxxxxzzxzzxxxxzzxxxxxxxzzxzzxzzxzzxxxxxxxxxxxxxxxxxxxzzxzzxzzx",
+"xzzzzzzzzzzzxzzxzzzzzxzzxzgzzzzzzzzzzzzxzzxzzxzzzzzzzzzzzzzzxzzzzzzzzxzzxzzx",
+"xxxxzzxxxxzzxzzxzzxxxxzzxzzxxxxxxxxxxzzxxxxzzxxxxxxxxxxxxxxxxxxxzzxxxxxxxxxx",
+"xzzxzzzzzxzzxzzzzzzzzxzzxzzxzzzzzzzzxzzxzzxzzzzzzzzzzzzzzzzzzzzzzzxzzzzzxzzx",
+"xzzxzzxzzxzzxxxxxxxxxxxxxzzxxxxzzxzzxxxxzzxzzxxxxzzxzzxzzxxxxxxxzzxzzxzzxzzx",
+"xzzzzzxzzxzzgzzzzzzzzxzzzzzxzzzzzxzzzgzzzzzzzxzzzzzxzzxzzxzgzzzzzzzzzxzzzzz",
+"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxzz",
 ];
 
 /* Challenge 2
@@ -33,7 +79,21 @@ let scene;
 
 window.addEventListener("DOMContentLoaded",function() {
   scene = document.querySelector("a-scene");
+
   for(let r = 0; r < maze.length; r++){
+    let row = maze[r];
+    let cols = row.split("");
+    for(let c = 0; c < cols.length; c++){
+      if(cols[c] == "x"){
+        new UnidentifiedFlyingObject(c,1,r);
+      }
+      else if(cols[c] == "z"){
+        new Dots(c,1.5,r);
+      }
+      else if(cols[c] == "g"){
+        new Ghost(c,1.5,r);
+      }
+    }
     /* Challenge 3
       Choose a technique to traverse the each character in the string.
     */ 

@@ -2,6 +2,9 @@
   <head>
     <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
     <script src="script.js"></script>
+    <script src="block.js"></script>
+    <script src="dots.js"></script>
+    <script src="ghost.js"></script>
   </head>
   <body>
     <a-scene>
@@ -9,11 +12,16 @@
         <!-- Challenge
              Upload a picture to use as the texture for the walls of your maze if you want
         -->
+        <img src="brickwall.jpg">
+        <img src="pacwall.jpg">
+        <img src="pacsky.jpeg">
+        <img src="pacghost.png">
       </a-assets>
-      <a-plane position="0 0 0" rotation="-90 0 0" width="150" height="150" color="#AAFFAA"></a-plane>
+      
+      <a-plane src="pacman_maze.jpg" repeat="5 5" position="0 0 0" rotation="-90 0 0" width="150" height="150" color="#AAFFAA"></a-plane>
       
       
-      <a-sky color="blue"></a-sky>
-      <a-camera position="0 1.3 0"> 
+      <a-sky src="pacsky.jpeg" repeat="5 5"></a-sky>
+      <a-camera position="0 2 0"> 
       </a-camera>
 </html>
